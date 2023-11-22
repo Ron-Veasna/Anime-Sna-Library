@@ -1,0 +1,342 @@
+
+.menu-bar{
+    background-color: #333;
+    box-shadow: 1px 1px 4px 0px #000;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.menu ul li a:hover{
+    background-color: yellow;
+    color: black;
+    font-weight: 600;
+}
+.menu ul li ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.menu ul li ul.sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #333;
+    box-shadow: 1px 1px 3px 0px #000;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 1;
+    text-align: center;
+}
+.menu ul li:hover ul.sub-menu{
+    display: block;
+}
+.left-menu{
+    position: fixed;
+    top: 0;
+    left: -398px;
+    width: 388px;
+    height: 100%;
+    background-color: #333;
+    box-shadow: 1px 1px 3px 0px #000;
+    transition: 0.4s;
+    z-index: 101;
+}
+.left-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.left-menu ul li a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+    color: white;
+    border-bottom: 5px solid #000;
+    transition: 0.5s;
+}
+.left-menu ul li a:hover{
+    background-color: yellow;
+    color: black;
+    font-weight: 600;
+}
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.788);
+    z-index: 100;
+}
+.item-container{
+    margin-top: 20px;
+}
+.menu2 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+.menu2 ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 18px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.menu2 ul li a:hover{
+    background-color: yellow;
+    color: #000;
+    font-weight: 600;
+}
+.menu2 ul li a i{
+    font-size: 15px;
+    margin-top: 8px;
+}
+.menu2 ul li ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 90%;
+    margin-left: 5%;
+    background-color: blue;
+}
+.slide-container{
+    height: 540px;
+}
+.slide-box{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.slide-box .slide{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    position: relative;
+    
+}
+.slide-box .slide .label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+}
+.slide-box .slide .label:hover{
+    background-color: yellow;
+    color: black;
+}
+.slide-box .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.btn-slide{
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    padding: 7px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: translate(0,-50%);
+    z-index: 1;
+}
+.btn-next{
+    right: 20px;
+}
+.btn-back{
+    left: 20px;
+}
+.btn-back:hover{
+    background-color: yellow;
+    color: black;
+}
+.btn-next:hover{
+    background-color: yellow;
+    color: black;
+}
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 2;
+}
+.pagination ul{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    padding: 8px;
+    list-style-type: none;
+}
+.pagination ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination ul li:hover{
+    background-color: yellow;
+}
+.pagination ul li.active{
+    background-color: yellow;
+}
+.item-box{
+    height: 600px;
+
+}
+.item-box .box{
+    width: 100%;
+    height: 100%;
+}
+.item-box .box .img-box img:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.item-box .box .img-box{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.item-box .box .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.anime-group-box{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 350px;
+    height: 490px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 1px 1px 4px 0px #333;
+    overflow-y: scroll;
+    z-index: 3;
+}
+.anime-group-box h1{
+    font-size: 27px;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: rgb(238, 221, 113);
+    box-shadow: 1px 1px 4px 0px #333;
+    margin: 0;
+    position: relative;
+}
+.anime-group-box h1 .hide{
+    position: absolute;
+    font-size: 10px;
+    top: 23px;
+    right: 10px;
+    display: none;
+}
+.anime-group-box h1:hover{
+    background-color: skyblue;
+    cursor: pointer;
+}
+.anime-group-box h1:hover .hide{
+    display: block;
+}
+.anime-group-box ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.anime-group-box ul li{
+    height: 80px;
+    padding: 10px;
+}
+.anime-group-box ul li img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.anime-group-box ul li span{
+    font-size: 22px;
+    padding: 10px;
+}
+.anime-group-box ul li:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+.chat{
+    position: fixed;
+    bottom: 10px;
+    right: 400px;
+    z-index: 4;
+}
+.chat .chat-box{
+    width: 320px;
+    height: 440px;
+    float: right;
+    margin: 0px 7px;
+    background-color: #eee;
+}
+.chat .chat-box .head{
+    width: 100%;
+    height: 83px;
+    background-color: #acabab91;
+    padding: 12px;
+    position: relative;
+}
+.chat .chat-box .head img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.chat .chat-box .head span{
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.chat .chat-box .head .btnclose{
+    position: absolute;
+    top: 26px;
+    right: 17px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.chat .chat-box .head .btnclose:hover{
+    color: red; 
+    font-weight: 600;
+}
